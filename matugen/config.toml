@@ -1,0 +1,17 @@
+[config]
+
+version_check = false
+caching = false
+
+[config.wallpaper]
+set = true
+command = "swww"
+arguments = ["img", "--transition-type", "center", "--transition-stepp", "63","--transition-fps", "100"]
+
+[templates.hyprland]
+input_path = '/home/denko/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.rofi]
+input_path = '/home/denko/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'

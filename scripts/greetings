@@ -1,0 +1,16 @@
+#!/bin/bash
+tput civis
+clear
+rows=$(tput lines)
+cols=$(tput cols)
+msg="ようこそ、デンコ様"
+msg_len=${#msg}
+row_pos=$((rows / 2))
+col_pos=$(((cols - msg_len) / 3))
+tput cup $row_pos $col_pos
+tput bold
+echo -e "\e[1;97m$msg\e[0m"
+tput sgr0
+sleep 2
+tput cnorm
+exec kill -9 $PPID

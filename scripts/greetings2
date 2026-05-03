@@ -1,0 +1,13 @@
+#!/bin/bash
+tput civis
+clear
+rows=$(tput lines)
+cols=$(tput cols)
+row_pos=$((rows / 7))
+col_pos=$((cols  / 6))
+tput cup $row_pos $col_pos
+tput bold
+fastfetch -c ~/.config/fastfetch/greetings.jsonc
+tput sgr0
+sleep 2
+tput cnorm

@@ -1,0 +1,25 @@
+2026/05/03-13:11:58.359 d42 Recovering log #16679
+2026/05/03-13:11:58.359 d42 Reusing old log /home/denko/.config/vesktop/sessionData/Local Storage/leveldb/016679.log 
+2026/05/03-13:11:58.389 d42 Delete type=3 #16483
+2026/05/03-13:12:58.396 d41 Level-0 table #16683: started
+2026/05/03-13:12:58.413 d41 Level-0 table #16683: 249221 bytes OK
+2026/05/03-13:12:58.421 d41 Delete type=0 #16679
+2026/05/03-13:16:09.096 d41 Level-0 table #16685: started
+2026/05/03-13:16:09.113 d41 Level-0 table #16685: 259991 bytes OK
+2026/05/03-13:16:09.121 d41 Delete type=0 #16682
+2026/05/03-13:16:37.248 d41 Level-0 table #16687: started
+2026/05/03-13:16:37.266 d41 Level-0 table #16687: 23305 bytes OK
+2026/05/03-13:16:37.274 d41 Delete type=0 #16684
+2026/05/03-13:16:37.274 d41 Compacting 4@0 + 3@1 files
+2026/05/03-13:16:37.303 d41 Generated table #16688@0: 103 keys, 3083742 bytes
+2026/05/03-13:16:37.338 d41 Generated table #16689@0: 11 keys, 3558755 bytes
+2026/05/03-13:16:37.362 d41 Generated table #16690@0: 57 keys, 2171693 bytes
+2026/05/03-13:16:37.362 d41 Compacted 4@0 + 3@1 files => 8814190 bytes
+2026/05/03-13:16:37.381 d41 compacted to: files[ 0 3 1 0 0 0 0 ]
+2026/05/03-13:16:37.381 d41 Delete type=2 #16596
+2026/05/03-13:16:37.381 d41 Delete type=2 #16683
+2026/05/03-13:16:37.381 d41 Delete type=2 #16680
+2026/05/03-13:16:37.381 d41 Delete type=2 #16685
+2026/05/03-13:16:37.381 d41 Delete type=2 #16687
+2026/05/03-13:16:37.382 d41 Delete type=2 #16678
+2026/05/03-13:16:37.382 d41 Delete type=2 #16597

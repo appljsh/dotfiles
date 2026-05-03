@@ -1,0 +1,309 @@
+
+/* Colors */
+@define-color background 	          #1e1e2eb3;
+@define-color background-alt  	    #ffffff00;
+@define-color background-alt-darker #ffffff14;
+@define-color noti                  #1e1e2eb3;
+@define-color accent-normal    	    #cdd6f4;
+@define-color accent-error     	    #f38ba8;
+@define-color bordercolor           #cdd6f4;
+@define-color fontcolor 	          #cdd6f4;
+@define-color fontaltcolor 	        #cdd6f4;
+
+
+/* Config */
+
+* {
+    font-family: "JetBrains Mono", monospace;
+}
+
+/* Notification */
+
+.notification {
+    background: transparent;
+  background: linear-gradient(180deg,rgba(69, 71, 90, 1) 0%, rgba(30, 30, 46, 0.7) 32%, rgba(30, 30, 46, 0.7) 85%, rgba(69, 71, 90, 1) 100%);
+    color: @fontcolor;
+    border: 2.5px solid @bordercolor;
+    border-radius: 15px;
+    padding:10px;
+    margin-top:20px;
+    margin-right:12px
+}
+
+.body {
+  color: @fontcolor;
+}
+
+.summary {
+  font-size: 1px;
+  font-weight: 700;
+  background: transparent;
+  color: @accent-normal;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: @fontcolor;
+  text-shadow: none;
+  margin-right: 18px;
+}
+
+.close-button {
+  background-color: @accent-error;
+  color: @fontaltcolor;
+  margin-top: 5px;
+  margin-right: 5px;
+  border-radius: 30px;
+  padding: 0px 4px;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    color: @fontcolor;
+    background: transparent;
+      box-shadow: none;
+}
+
+.notification.critical progress {
+  background-color: @accent-error;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: @accent-normal;
+}
+
+/* Control Center */
+
+.control-center {
+    background: transparent;
+  background: linear-gradient(180deg,rgba(69, 71, 90, 1) 0%, rgba(30, 30, 46, 0.7) 32%, rgba(30, 30, 46, 0.7) 85%, rgba(69, 71, 90, 1) 100%);
+    color: @fontcolor;
+    border: 2.5px solid @bordercolor;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+/* Notifications expanded-group */
+
+.notification-group {
+  background-color: transparent;
+  margin: 2px;
+  font-size: 0.1rem;
+}
+
+.notification-group-icon {
+  color: @background-alt-darker;
+}
+
+.notification-group-headers {
+  color: @background-alt-darker;
+}
+
+
+
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+  background: @background-alt-darker;
+  color: @fontcolor;
+  margin: 4px; 
+  border-radius: 40px;
+  padding: 0px 4px;
+}
+
+.notification-group-collapse-button:hover,
+.notification-group-close-all-button:hover {
+  background: @accent-error;
+  color: @fontaltcolor;
+}  
+
+.notification-content .app-name {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.notification-content .summary {
+    font-size: 1.2rem;
+}
+
+/* widget title */
+.widget-title {
+  color: @fontcolor;
+}
+
+.widget-title > label {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: @fontcolor;
+    margin: 10px;
+}
+.widget-title>button {
+  font-size: 1rem;
+  color: @fontcolor;
+  background: @background-alt-darker;
+  box-shadow: none;
+  border: .5px solid rgba(255, 255, 255, 0.22);
+}
+
+.widget-title>button:hover {
+  background: @accent-error;
+  color: @fontaltcolor;
+}
+
+
+
+/* widget button grid */
+button {
+    border: 0px;
+    min-width: 0px;
+  background: rgba(255, 255, 255, 0.078);
+  background: linear-gradient(180deg,rgba(69, 71, 90, 0.5) 0%, rgba(255, 255, 255, 0.08) 32%, rgba(255, 255, 255, 0.08) 85%, rgba(69, 71, 90, 0.4) 100%);
+
+    margin: 1px;
+   border: .5px solid rgba(255, 255, 255, 0.571);
+}
+
+.widget-buttons-grid {
+  font-size: 20px;
+  background: @background-alt;
+  
+  
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    color: @fontcolor;
+    margin: 9px;
+    padding: 10px 32px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: alpha(@fontcolor, .1);
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+  background: @accent-normal;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked label {
+    color: @fontaltcolor;
+}
+
+
+
+
+/* dnd widget */
+.widget-dnd {
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: large;
+  color: #cdd6f4;
+}
+
+.widget-dnd>label {
+  color: #cdd6f4;
+}
+
+.widget-dnd>switch {
+  background: @background-alt-darker;
+  color: #cdd6f4;
+  border-radius: 50px;
+  border: .5px solid rgba(255, 255, 255, 0.30);
+}
+
+.widget-dnd>switch:checked {
+  background: #ffffff39;
+  border: 0px solid #ffffff39;
+  border-radius: 50px;
+  border: .5px solid rgba(255, 255, 255, 0.30);
+}
+
+
+/* volume & backlight widget */
+
+.widget-volume {
+  background: @background-alt-darker;
+  color: @fontcolor;
+  font-size: x-large;
+  border: .5px solid rgba(255, 255, 255, 0.30);
+}
+
+.widget-volume scale slider {
+    background: @fontcolor;
+    color: @background-alt-darker;
+    border-radius: 100%;
+    border-color: @fontcolor;
+    min-width: 15px;
+    min-height: 15px;
+    margin: -5px;
+    box-shadow: none;
+}
+
+
+
+
+.widget-backlight {
+  background: @background-alt-darker;
+  color: @fontcolor;
+  font-size: x-large;
+}
+
+/* music player widget */
+.widget-mpris {
+  background: transparent;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 12px;
+
+}
+
+.widget-mpris button {
+  background-color: transparent;
+  padding: 0px 7px;
+  margin: 10px 2px -5px 2px;
+  border-radius: 30px;
+}
+
+.widget-mpris button:hover {
+  background-color: #ffffff55;
+  color: @fontaltcolor;
+}
+
+
+.widget-mpris-title {
+    font-size: 1.1rem; /* Puedes usar px, rem o pt */
+    font-weight: bold;
+}
+
+.widget-mpris-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.8; /* Lo hace un poco más tenue para dar jerarquía */
+}
+
+
+
+trough slider {
+    background: @fontcolor;
+}
+
+trough slider:hover {
+    background: @accent-normal;
+}
+
+
+trough highlight {
+  background: @fontcolor;
+}
+
+scrollbar,
+scrollbar trough,
+scrollbar slider {
+    min-width: 0px;
+    min-height: 0px;
+    background: transparent;
+    border: none;
+}

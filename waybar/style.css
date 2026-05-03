@@ -1,0 +1,213 @@
+@import "mocha.css";
+* {
+  font-family: "JetBrains Mono";
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  min-height: 0;
+}
+
+* { 
+    border-radius: 0px;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+}
+  /***WAYBAR***/
+#waybar {
+    color: @blue;
+    background: transparent;
+  background: linear-gradient(180deg,rgba(69, 71, 90, 1) 0%, rgba(30, 30, 46, 0.7) 32%, rgba(30, 30, 46, 0.7) 85%, rgba(69, 71, 90, 1) 100%);
+    border-bottom: 0px solid @blue;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+  /***LEFT MODULES***/
+.modules-left{
+	color: rgb(205, 214, 244);
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+  /***WORKSPACES***/
+#workspaces {
+  background: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg,rgba(69, 71, 90, 0.5) 0%, rgba(255, 255, 255, 0.08) 32%, rgba(255, 255, 255, 0.08) 85%, rgba(69, 71, 90, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 0px 100px 100px 0px;
+  margin: 0 0px;
+  padding: 0px 10px;
+  color: @blue;
+  font-family: "JetBrains Mono";
+}
+#workspaces button {
+    color: @overlay0;
+    border: 0px solid @text;
+    border-radius: 0px;
+    margin: 0px 1px 0px 1px;
+    padding: 0px 2px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    transition: all 0.2s cubic-bezier( 0.19, 1, 0.22, 1 );
+}
+#workspaces button.active {
+    background-color: @none;
+    color: @text;
+    border-radius: 30px;
+    padding: 0px 2px;
+    background-size: 400% 400%;
+    transition: all 0.2s cubic-bezier( 0.19, 1, 0.22, 1 );
+
+}
+#workspaces button:hover {
+    color: @text;
+    background-color : transparent;
+
+
+}
+#workspaces button.urgent {
+    color: rgb(235, 160, 172);
+    background-color: rgba(235, 160, 173, 0);
+    border-radius: 999px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+#pulseaudio {
+    color: @blue ;
+    border-radius: 0px;
+    margin: 4px 2px;
+    padding: 0px 6px 0px 6px;
+    font-size: 15px;
+}
+#pulseaudio.input{
+    color: @blue;
+    border-radius: 0px;
+    margin: 4px 2px;
+    padding: 0px 6px 0px 6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+#custom-weather {
+    color: @blue;
+    margin: 2px 20px;
+    margin-left: 1px;
+    margin-right: 0px;
+    padding: 0px 6px 0px 6px;
+    font-family: "JetBrains Mono";
+    font-weight:500;
+    font-size: 14px;
+}
+#custom-spotify{
+    color: @blue;
+    border-radius: 0px;
+    margin: 4px 2px;
+    padding: 0px 6px 0px 6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+  /***CENTER MODULES***/
+
+#clock {
+  background: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg,rgba(69, 71, 90, 0.5) 0%, rgba(255, 255, 255, 0.08) 32%, rgba(255, 255, 255, 0.08) 85%, rgba(69, 71, 90, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 100px 0px 0px 100px;
+  margin: 0 0px;
+  padding: 2px 15px;
+  color: @text;
+}
+  /***RIGHT MODULES***/
+.modules-right{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#custom-swaync{
+	color: @blue;
+    margin: 2px 20px;
+    margin-left: 1px;
+    margin-right: 0px;
+    padding: 0px 2px 0px 5px;
+    font-family: "JetBrains Mono";
+    font-weight:500;
+    font-size:13px;
+}
+#cpu {
+	color: @blue;
+    background-color: rgba(22, 31, 36, 0);
+    border: 0px solid #F2E6CE;
+    border-radius: 6px;
+    padding: 0px 6px 0px 6px;
+}
+#disk {
+	color: @blue;
+    background-color: rgba(22, 31, 36, 0);
+    border: 0px solid #F2E6CE;
+    border-radius: 6px;
+    padding: 0px 6px 0px 6px;
+}
+#memory {
+	color: @blue;
+    background-color: rgba(22, 31, 36, 0);
+    border: 0px solid #F2E6CE;
+    border-radius: 6px;
+    padding: 0px 6px 0px 6px;
+}
+tooltip  {
+  background-color: #02182e;
+  border: 2px solid @blue ;
+    font-family: "JetBrains Mono";
+    font-weight:500;
+    font-size:13px;
+}
+  /***NOT IN USE***/
+#idle_inhibitor {
+    margin-right: 12px;
+    color: #7cb342;
+}
+#idle_inhibitor.activated {
+    color: #ff0000
+}
+#battery {
+    color: #7cb342;
+    border-bottom: 2px solid #7cb342;
+}
+#tray{
+    color: rgb(205, 214, 244);
+    padding: 0px 0px 0px 0px;
+    margin: 4px 2px;
+    background-color: rgba(65, 69, 89, 0);
+    border-radius: 30px;
+    font-size: 15px;
+}
+#window {
+  background: rgba(255, 255, 255, 0.078);
+  background: linear-gradient(180deg,rgba(69, 71, 90, 0.5) 0%, rgba(255, 255, 255, 0.08) 32%, rgba(255, 255, 255, 0.08) 85%, rgba(69, 71, 90, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 100px 100px 100px 100px;
+  margin: 0 5px;
+  padding: 2px 11px;
+  color: @text;
+}
+window#waybar.empty #window {
+  background: rgba(255, 255, 255, 0.078);
+  background: linear-gradient(180deg,rgba(69, 71, 90, 0.5) 0%, rgba(255, 255, 255, 0.08) 32%, rgba(255, 255, 255, 0.08) 85%, rgba(69, 71, 90, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  margin: 0 5px;
+  padding: 2px 11px;
+  color: @text;
+}
+#network {
+    color: rgb(249, 226, 175);
+    background-color: rgba(22, 31, 36, 0);
+    border: 0px solid #F2E6CE;
+    border-radius: 6px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+}

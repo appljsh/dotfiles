@@ -1,0 +1,205 @@
+
+{
+"position": "bottom",
+"height": 20,
+"spacing": 1,
+"margin-top": 0,
+"margin-bottom": 0.5,
+"margin-left": -1,
+"margin-right": -1,
+"reload_style_on_change": true,
+
+"modules-left":
+[ "custom/spotify",
+  "custom/separator", 
+  "pulseaudio", 
+  "custom/separator",
+  "pulseaudio#input",
+  "custom/separator",
+  "custom/weather"
+  ],
+"modules-center":
+  ["clock"],
+"modules-right": 
+[ "custom/swaync",
+  "custom/separator",
+  "cpu",
+  "custom/separator",
+  "disk",
+  "custom/separator",
+  "memory"],
+
+
+"custom/weather": {
+  "format": "{}",
+  "format-alt": "{alt}: {}",
+  "format-alt-click": "click",
+  "interval": 3600,
+  "return-type": "json",
+  "exec": "$HOME/.config/waybar/scripts/Weather.py",
+  "tooltip": true
+},
+"custom/spotify": {
+    "exec": "/usr/bin/python3 ~/.config/scripts/mediaplayer.py --player spotify",
+    "format": "<span font-family='Iosevka Nerd Font' font='12,black'></span> <span font-family='JetBrains Mono' font='9' >{}</span>",
+    "return-type": "json",
+    "max-length": 80, 
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+    
+},
+"custom/swaync": {
+  "tooltip": true,
+  "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
+  "format": "{} {icon} ",
+  "format-icons": {
+    "notification": "<span foreground='#eebebe'><sup> </sup></span>",
+    "none": "",
+    "dnd-notification": "<span foreground='#eebebe'><sup></sup></span>",
+    "dnd-none": "",
+    "inhibited-notification": "<span foreground='#eebebe'><sup></sup></span>",
+    "inhibited-none": "",
+    "dnd-inhibited-notification": "<span foreground='#eebebe'><sup></sup></span>",
+    "dnd-inhibited-none": ""
+  },
+  "return-type": "json",
+  "exec-if": "which swaync-client",
+  "exec": "swaync-client -swb",
+  "on-click": "sleep 0.1 && swaync-client -t -sw",
+  "on-click-right": "swaync-client -d -sw",
+  "escape": true
+},
+"disk": {
+  "format": "<span font-family='Nerd Font'> </span> <span font-family='JetBrains Mono' font='9'  >{used}/{free}</span>",
+  "tooltip": true,
+  "tooltip-format": "Espacio libre: {free} / {total} ({percentage_free}%)",
+  "on-click": "nemo"
+},
+"tray": {
+	"icon-size": 15,
+	"spacing": 10,
+  "icons": {
+    "blueman": "bluetooth",
+    "spotify": "spotify"
+  }
+},
+"custom/separator": {
+  "format": "|", 
+  "font-family": "Noto Sans CJK",
+  "tooltip": false,   
+  "on-click": "",     
+  "interval": "once"  
+},
+
+"memory": {  
+  "format": "<span font-family='Nerd Font'>{icon}</span><span font-family='JetBrains Mono' font='9'  >{used}GiB/{total}GiB</span>",
+  "format-icons": ["󰘚 "],
+  "tooltip": "Uso de la memoria RAM",
+  "interval": 10,
+  "on-click": "kitty -e --hold btop"
+},
+"cpu": {  
+  "format": "<span font-family='Nerd Font'>{icon}</span><span font-family='JetBrains Mono' font='9'  >{usage}%</span>",
+  "format-icons": [" "],
+  "max-length": 8,  
+  "min-length": 2,
+  "tooltip": "Uso del CPU",
+  "interval": 10 ,
+  "on-click": "~/.config/scripts/info.sh"
+},
+  "hyprland/window": {
+    "format": "{class}",
+    "rewrite": {
+      "^$": "Desktop"
+    },
+    "max-length": 15,
+    "min-length": 15,
+    "separate-outputs": true,
+    "tooltip": false
+  },
+
+"hyprland/workspaces": { 
+  "format": "{icon}",
+  "format-icons": {
+  "1": "<span font='Noto Sans CJK JP bold'>一</span>",
+  "2": "<span font='Noto Sans CJK JP bold'>二</span>",
+  "3": "<span font='Noto Sans CJK JP bold'>三</span>",
+  "4": "<span font='Noto Sans CJK JP bold'>四</span>",
+  "5": "<span font='Noto Sans CJK JP bold'>五</span>",
+  "6": "<span font='Noto Sans CJK JP bold'>六</span>",
+  "7": "<span font='Noto Sans CJK JP bold'>七</span>",
+  "8": "<span font='Noto Sans CJK JP bold'>八</span>",
+  "9": "<span font='Noto Sans CJK JP bold'>九</span>",
+  "10": "<span font='Noto Sans CJK JP bold'>十</span>",
+  "default": ""
+},
+  "persistent-workspaces": {
+  "*": 5
+  },
+  "on-click": "activate"
+},
+
+"clock": { 
+  "format":  "{:%I:%M %p}",
+  "format-alt":"{:%D:%M}",
+  "max-length": 15,
+  "min-length": 15,
+  "tooltip-format": "<tt><big>{calendar}</big></tt>",
+          "calendar": {  "interval": 1,
+                  "mode"          : "year",
+                  "mode-mon-col"  : 3,
+                  "weeks-pos"     : "left",
+                  "on-scroll"     : 1,
+                  "format": {
+                            "months":     "<span ><b>{}</b></span>",
+                            "days":       "<span color='#cdd6f4'><b>{}</b></span>",
+                            "weeks":      "<span color='#b4befe'><b>W{:%U}</b></span>",
+                            "weekdays":   "<span color='#89b4fa'><b>{}</b></span>",
+                            "today":      "<span color='#89dceb'><b><u>{}</u></b></span>"
+                            }
+                  }
+},
+"battery": {
+  "states": {
+    "warning": 30,
+    "critical": 15
+  },
+  "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+  "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+  "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+  "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+  "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+  "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+  "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+  "format-icons": ["", "", "", "", ""],
+  "tooltip-format": "{time}"
+},
+"network": { 
+"format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
+"format-ethernet": "<span font-family='Nerd Font Mono'>  </span> <span font-family='Iosevka Nerd Font' font='10,bold'  >{bandwidthDownBits}</span> <span font-family='Nerd Font' color='#A7C080'>  </span> <span font-family='Iosevka Nerd Font' font='10,bold'  >{bandwidthUpBits}</span>",
+"format-linked": "{ifname} (No IP) ",
+"format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+"tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+"interval": 10,
+"on-click": "kitty -e --title=speedtest --hold speedtest"
+},
+"pulseaudio": { 
+  "class": "media-group",
+    "format": "<span font-family='Nerd Font'>{icon}</span> <span font-family='JetBrains Mono' font='9'  >{volume}%</span>",
+    "format-muted": "  Muted",
+    "format-icons": {
+    "default": [" ", " ", " "]
+    },
+    "on-click": "pavucontrol"
+},
+"pulseaudio#input": {
+"format-source": "<span font-family='Nerd Font'></span> <span font-family='JetBrains Mono' font='9'  >On</span>",
+"format-source-muted": "<span font-family='Nerd Font'></span> <span font-family='JetBrains Mono' font='9'  >Off</span>",
+"format": "{format_source}",
+"scroll-step": 1,
+"smooth-scrolling-threshold": 1,
+"on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle & play '~/Music/Sounds/mute.mp3'"
+}
+}
+

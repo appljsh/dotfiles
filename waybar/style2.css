@@ -1,0 +1,208 @@
+@import "mocha.css";
+* {
+  font-family: "JetBrains Mono";
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  min-height: 0;
+}
+
+* { 
+    border-radius: 0px;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+}
+  /***WAYBAR***/
+#waybar {
+    color: @blue;
+    background: transparent;
+    background: linear-gradient(180deg,rgba(69, 71, 90, 1) 0%, rgba(30, 30, 46, 0.7) 32%, rgba(30, 30, 46, 0.7) 85%, rgba(69, 71, 90, 1) 100%);
+    border-top: 0px solid @blue;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+  /***LEFT MODULES***/
+.modules-left{
+  background: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg,rgba(69, 71, 90, 0.5) 0%, rgba(255, 255, 255, 0.08) 32%, rgba(255, 255, 255, 0.08) 85%, rgba(69, 71, 90, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 0px 100px 100px 0px;
+  margin: 0 0px;
+  padding: 0px 10px;
+  color: @text;
+}
+  /***WORKSPACES***/
+#workspaces {
+    background: transparent;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 16px;
+    font-family: "Noto Sans CJK";
+    font-weight:bold;
+}
+#workspaces button {
+    background: @surface0;
+    color: @surface2;
+    border: 0px solid @blue;
+    border-radius: 16px;
+    margin: 0px 2px 0px 2px;
+    padding: 0px 6px;
+    transition: all 0.2s cubic-bezier( 0.19, 1, 0.22, 1 );
+}
+#workspaces button.active {
+    background-color: @blue;
+    color: #02182e;
+    border-radius: 16px;
+    padding: 0px 5px 0px 5px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.2s cubic-bezier( 0.19, 1, 0.22, 1 );
+
+}
+#workspaces button:hover {
+    color: #02182e;
+    background-color: @blue;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+
+}
+#workspaces button.urgent {
+    color: rgb(71, 73, 82);
+    background-color: rgb(235, 160, 172);
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+#pulseaudio {
+    color: @text ;
+    border-radius: 0px;
+    margin: 0px 2px;
+    padding: 0px 6px
+}
+#pulseaudio.input{
+    color: @text;
+    border-radius: 0px;
+    margin: 0px 2px;
+    padding: 0px 6px;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+#custom-weather {
+    color: @text;
+    margin: 2px 20px;
+    margin-left: 1px;
+    margin-right: 0px;
+    padding: 0px 5px;
+    font-family: "JetBrains Mono";
+    font-weight: 500;
+
+}
+#custom-spotify{
+    color: @text;
+    border-radius: 0px;
+    margin: 0px 2px;
+    padding: 0px 6px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+  /***CENTER MODULES***/
+
+#clock {
+  background: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg,rgba(69, 71, 90, 0.5) 0%, rgba(255, 255, 255, 0.08) 32%, rgba(255, 255, 255, 0.08) 85%, rgba(69, 71, 90, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 100px 100px 100px 100px;
+  margin: 0 5px;
+  padding: 0px 11px;
+  color: @text;
+}
+  /***RIGHT MODULES***/
+.modules-right{
+  background: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg,rgba(69, 71, 90, 0.5) 0%, rgba(255, 255, 255, 0.08) 32%, rgba(255, 255, 255, 0.08) 85%, rgba(69, 71, 90, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 100px 0px 0px 100px;
+  margin: 0 0px;
+  padding: 0px 11px;
+  color: @text;
+}
+#custom-swaync{
+	color: @text;
+    margin: 2px 20px;
+    margin-left: 1px;
+    margin-right: 0px;
+    padding: 0px 2px;
+    font-family: "JetBrains Mono";
+    font-weight: 500;
+}
+#cpu {
+	color: @text;
+    background-color: rgba(22, 31, 36, 0);
+    border: 0px solid #F2E6CE;
+    font-weight: 500;
+    padding: 0px 6px;
+}
+#disk {
+	color: @text;
+    background-color: rgba(22, 31, 36, 0);
+    border: 0px solid #F2E6CE;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0px 6px;
+}
+#memory {
+	color: @text;
+    background-color: rgba(22, 31, 36, 0);
+    border: 0px solid #F2E6CE;
+    border-radius: 6px;
+    padding: 0px 6px;
+}
+tooltip  {
+  background-color: #02182e;
+  border: 2px solid @blue ;
+    font-family: "Iosevka Nerd Font";
+    font-weight:bold;
+}
+  /***NOT IN USE***/
+#idle_inhibitor {
+    margin-right: 12px;
+    color: #7cb342;
+}
+#idle_inhibitor.activated {
+    color: #ff0000
+}
+#battery {
+    color: #7cb342;
+    border-bottom: 2px solid #7cb342;
+}
+#tray{
+    color: rgb(205, 214, 244);
+    padding: 0px 0px 0px 0px;
+    margin: 0px 2px;
+    background-color: rgba(65, 69, 89, 0);
+    border-radius: 30px;
+    font-size: 15px;
+}
+#window {
+    color: rgb(205, 214, 244);
+    padding: 0 0 0 0px;
+    margin: 0px 2px;
+    background-color: rgba(65, 69, 89, 0);
+    border-radius: 30px;
+
+}
+#network {
+    color: rgb(249, 226, 175);
+    background-color: rgba(22, 31, 36, 0);
+    border: 0px solid #F2E6CE;
+    border-radius: 6px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+}

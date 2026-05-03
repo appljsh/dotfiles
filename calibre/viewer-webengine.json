@@ -1,0 +1,184 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 998,
+      "width": 947,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 998,
+      "width": 947,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 496,
+      "width": 947,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA7IAAAPlAAAAAAAAAAAAAAOyAAAB7wAAAAACAAAAB4AAAAAAAAAAAAAAA7IAAAPl"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "BNQ",
+      "model": "BenQ GW2490",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-viewer_image_popup_geometry": {
+    "frame_geometry": {
+      "height": 496,
+      "width": 947,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 496,
+      "width": 947,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 496,
+      "width": 947,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA7IAAAHvAAAAAAAAAAAAAAOyAAAB7wAAAAACAAAAB4AAAAAAAAAAAAAAA7IAAAHv"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "BNQ",
+      "model": "BenQ GW2490",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIoA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAmgD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACDAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAPIA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAANcA////AAADswAAA+YAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Tomo 43 (#373-381)"
+        ],
+        "key": "/home/denko/Downloads/Kanojo-T43/Kanojo, Okarishimasu - Tomo 43 (#373-381).cbz",
+        "pathtoebook": "/home/denko/Downloads/Kanojo-T43/Kanojo, Okarishimasu - Tomo 43 (#373-381).cbz",
+        "timestamp": "2026-01-14T00:38:47.407Z",
+        "title": "Kanojo, Okarishimasu"
+      },
+      {
+        "authors": [
+          "Tomo 02 (#005-008)"
+        ],
+        "key": "/home/denko/Downloads/Citrus-T01-03/Citrus - Tomo 02 (#005-008).cbr",
+        "pathtoebook": "/home/denko/Downloads/Citrus-T01-03/Citrus - Tomo 02 (#005-008).cbr",
+        "timestamp": "2026-01-14T00:36:49.508Z",
+        "title": "Citrus"
+      },
+      {
+        "authors": [
+          "Tomo 01 (#001-004)"
+        ],
+        "key": "/home/denko/Downloads/Citrus-T01-03/Citrus - Tomo 01 (#001-004).cbr",
+        "pathtoebook": "/home/denko/Downloads/Citrus-T01-03/Citrus - Tomo 01 (#001-004).cbr",
+        "timestamp": "2026-01-14T00:35:58.456Z",
+        "title": "Citrus"
+      },
+      {
+        "authors": [
+          "Tomo 04 (#025-033)"
+        ],
+        "key": "/home/denko/Downloads/KaguyaKokurasetaiDoujin-T03-04/Kaguya-sama wa Kokurasetai Doujin-ban - Tomo 04 (#025-033).cbr",
+        "pathtoebook": "/home/denko/Downloads/KaguyaKokurasetaiDoujin-T03-04/Kaguya-sama wa Kokurasetai Doujin-ban - Tomo 04 (#025-033).cbr",
+        "timestamp": "2026-01-14T00:28:52.477Z",
+        "title": "Kaguya-sama wa Kokurasetai Doujin-ban"
+      },
+      {
+        "authors": [
+          "Tomo 03 (#017-024)"
+        ],
+        "key": "/home/denko/Downloads/KaguyaKokurasetaiDoujin-T03-04/Kaguya-sama wa Kokurasetai Doujin-ban - Tomo 03 (#017-024).cbr",
+        "pathtoebook": "/home/denko/Downloads/KaguyaKokurasetaiDoujin-T03-04/Kaguya-sama wa Kokurasetai Doujin-ban - Tomo 03 (#017-024).cbr",
+        "timestamp": "2026-01-14T00:28:05.576Z",
+        "title": "Kaguya-sama wa Kokurasetai Doujin-ban"
+      },
+      {
+        "authors": [
+          "Tomo 02 (#009-016)"
+        ],
+        "key": "/home/denko/Downloads/KaguyaKokurasetaiDoujin-T01-02/Kaguya-sama wa Kokurasetai Doujin-ban - Tomo 02 (#009-016).cbr",
+        "pathtoebook": "/home/denko/Downloads/KaguyaKokurasetaiDoujin-T01-02/Kaguya-sama wa Kokurasetai Doujin-ban - Tomo 02 (#009-016).cbr",
+        "timestamp": "2026-01-14T00:23:33.478Z",
+        "title": "Kaguya-sama wa Kokurasetai Doujin-ban"
+      },
+      {
+        "authors": [
+          "Tomo 01 (#001-008)"
+        ],
+        "key": "/home/denko/Downloads/KaguyaKokurasetaiDoujin-T01-02/Kaguya-sama wa Kokurasetai Doujin-ban - Tomo 01 (#001-008).cbr",
+        "pathtoebook": "/home/denko/Downloads/KaguyaKokurasetaiDoujin-T01-02/Kaguya-sama wa Kokurasetai Doujin-ban - Tomo 01 (#001-008).cbr",
+        "timestamp": "2026-01-14T00:21:52.004Z",
+        "title": "Kaguya-sama wa Kokurasetai Doujin-ban"
+      }
+    ]
+  }
+}

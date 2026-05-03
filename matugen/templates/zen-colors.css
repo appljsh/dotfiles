@@ -1,0 +1,9 @@
+/*
+* Css Colors
+* Generated with Matugen
+*/:root {
+  --background: {{ colors.inverse_on_surface.default.hex }};
+  --main: {{ colors.primary.default.hex }};
+  --secondary: {{ colors.surface_variant.default.hex }};
+  --primary: {{ colors.primary.default.hex }};
+}

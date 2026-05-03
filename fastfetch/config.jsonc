@@ -1,0 +1,65 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "/home/denko/.config/fastfetch/rin2.jpg",
+        "type": "auto",
+        "height": 9,
+        "padding": {
+            "top": 0,
+            "left": 0
+        },
+        "color": {
+            "1": "1"
+        }
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {   
+            "type": "custom",
+            "format": "┌───────────────────────────────────────────────"
+        },
+        {
+            "type": "os",
+            "key": " \u001b[38;2;242;143;173m Distro  ", 
+            "keyColor": "default"
+        },
+        {
+            "type": "kernel",
+            "key": " \u001b[38;2;249;191;156m Kernel  ", 
+            "keyColor": "default"
+        },
+        {
+            "type": "shell",
+            "key": " \u001b[38;2;232;227;161m Shell   ",
+            "keyColor": "default", 
+            "format": "Zsh (x86_64-pc-linux-gnu)"
+        },
+        {
+            "type": "wm",
+            "key": " \u001b[38;2;171;233;179m WM      ",
+            "keyColor": "default"
+        },
+        {
+            "type": "gpu",
+            "key": " \u001b[38;2;150;205;251m󰡩 GPU     ", 
+            "keyColor": "default", 
+            "format" : "{2}"
+        },
+        {
+            "type": "cpu",
+            "key": " \u001b[38;2;221;182;242m CPU     ", 
+            "keyColor": "default"
+        },
+        {
+            "type": "memory",
+            "key": "  Memory  ", 
+            "keyColor": "default"
+        },
+{
+    "type": "custom",
+    "format": "└──────────────────────────── \u001b[38;2;242;143;173mド\u001b[38;2;249;191;156mリ\u001b[38;2;232;227;161mア\u001b[38;2;171;233;179mン\u001b[38;2;217;224;238m・\u001b[38;2;150;205;251mエ\u001b[38;2;242;143;173mミ\u001b[38;2;221;182;242mリ\u001b[38;2;217;224;238mオ"
+}
+    ]
+}
